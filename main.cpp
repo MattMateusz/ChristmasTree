@@ -3,15 +3,15 @@
 using namespace std;
 
 void building_christmas_tree(int base_lenght, int no_levels) {
-  int rows = (base_lenght / 2) + 1;  // Licze ilsc pieter w czesci choinki
+  int rows = (base_lenght / 2) + 1;  // Licze ilsc pięter w czesci choinki
   for(int i = 0;i < no_levels;i++) {
        int x_number = 1;   
-       while(x_number <= base_lenght) {  //dopuki ilosc x nie przekracza ilosci x w podstawie
+       while(x_number <= base_lenght) {  //dopoki ilosc x nie przekracza ilosci x w podstawie
         int spaces_numbers = (base_lenght - x_number) / 2; 
-        for(int j = 0; j < spaces_numbers; j++) {  //ilosc spacji
+        for(int j = 0; j < spaces_numbers; j++) {  //ilość spacji
          cout << " ";
         }
-        for(int j = 0; j < x_number; j++) {   //ilosc x w wierszu
+        for(int j = 0; j < x_number; j++) {   //ilo x w wierszu
          cout << "X";
         }
         cout << endl;
