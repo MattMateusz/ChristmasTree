@@ -3,22 +3,22 @@
 using namespace std;
 
 void building_christmas_tree(int base_lenght, int no_levels) {
-  int rows = (base_lenght / 2) + 1;  // Licze ilsc pięter w czesci choinki
+  int rows = (base_lenght / 2) + 1;  // Licze ilość pięter w cześci choinki
   for(int i = 0;i < no_levels;i++) {
        int x_number = 1;   
-       while(x_number <= base_lenght) {  //dopoki ilosc x nie przekracza ilosci x w podstawie
+       while(x_number <= base_lenght) {  //dopoki ilość x nie przekracza ilości x w podstawie
         int spaces_numbers = (base_lenght - x_number) / 2; 
         for(int j = 0; j < spaces_numbers; j++) {  //ilość spacji
          cout << " ";
         }
-        for(int j = 0; j < x_number; j++) {   //ilo x w wierszu
+        for(int j = 0; j < x_number; j++) {   //ilość x w wierszu
          cout << "X";
         }
         cout << endl;
-        x_number = x_number + 2;   //zmiana w warunku przy kolejnym przejsciu petli
+        x_number = x_number + 2;   //zmiana w warunku przy kolejnym przejściu pętli
       }
   }    
-  int log_widht;  //zaczynam robic zaleznosc szerokosci pnia z x od dlugosci podstawy choinki
+  int log_widht;  //zaczynam robić zaleznosść szerokości pnia z x od długości podstawy choinki
   if(base_lenght <= 5) {
    log_widht = 1;
   }
@@ -45,7 +45,7 @@ int main() {
         cout << "Podaj ilość pięter drzewka: ";
         cin >> no_levels;
           if(no_levels > 0) {
-            building_christmas_tree(base_lenght, no_levels);   //wywoluje funkce
+            building_christmas_tree(base_lenght, no_levels);   //wywołuje funkcę
           }
           else {
           cout << "Aby powstało drzewo musi być jakieś piętro!" << endl;
@@ -64,5 +64,5 @@ return 0;
 
 /*
 Do zrobienia: 
- - Zrobic tak, zeby ilosc x w karzdym trojkacie ponizej tego na samej gorze byla troche mniejsza
+ - Zrobić tak, zeby ilość x w kazdym trojkącie ponizej tego na samej gorze była troche mniejsza
 */
